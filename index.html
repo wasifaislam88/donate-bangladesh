@@ -6,9 +6,83 @@
     <title\Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"type="text/css"/>
   <script src="https://cdn.tailwindcss.com"></script>
+<!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+<!-- configuration....... -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "rgb(17, 17, 17)",
+            secondary: "rgba(17, 17, 17, 0.7)",
+            teritary: "rgba(17, 17, 17, 0.4)",
+            hbg: "#fbe8c7b3",
+            fbg: "#fbe8c7b3",
+            green_primary: "rgb(100, 244, 97)",
+            green_secondary: "#aed6f1",
+            btn_secondary: "#F2F2F2",
+          },
+          fontFamily: {
+            Lexend: "Lexend",
+          },
+        },
+      },
+    };
+  </script>
+
+<body class="font-Lexend min-h-screen">
+  <header class="sticky top-0 z-10 backdrop-filter backdrop-blur">
+    <section class="bg-hbg">
+      <nav class="w-10/12 mx-auto flex flex-col md:flex-row gap-4 md:gap-0 justify-between py-5">
+
+        <div class="md:hidden"><div class="flex items-center font-bold text-xl text-primary gap-4">
+          <img class="" src="./assets/logo.png" alt="logo" />
+          <h1 class="">Donate Bangladesh</h1>
+        </div>
+        </div>
+
+        <div> <a href=""class=" md:px-8 py-3 flex font-semibold text-xl rounded-lg bg-green_primary hover:bg-green_secondary">
+          <span class="mx-auto">Blog</span> </a>
+        </div>
+
+
+        <div class="hidden md:block">
+        <div class="flex items-center font-semibold text-xl text-purple-800 gap-4"> <img class="" src="./assets/logo.png" alt="logo" />
+          <h1 class="">Donate Bangladesh</h1>
+        </div>
+        </div>
+
+        <div
+        class=" flex items-center font-medium text-xl text-purple-800 gap-3 "> <img class="" src="./assets/coin.png" alt="coin" /><p><span id="balance">5500</span> BDT</p>
+      </div>
+    </nav>
+  </section>
+
+
+
+  <section class="w-11/12 md:w-3/4 mx-auto flex justify-center gap-5 py-5">
+    <button
+      id="donation-button"
+      class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-green_primary border-2 border-gray-400">Donation</button>
+
+    <button
+      id="history-button"class="px-8 py-4 flex font-semibold text-xl rounded-lg bg-btn_secondary border-2 border-gray-400">History</button>
+  </section>
+</header>
+
+
+
+
 
 </head>
+<script src="./js/math.js"></script>
+<script src="./js/utilities.js"></script>
 <body>
-    
 </body>
 </html>
