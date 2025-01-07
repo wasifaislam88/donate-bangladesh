@@ -5,13 +5,19 @@
 
 
 document.getElementById("donate-one-btn").addEventListener("click",function(){
-    const donateInputOne = document.getElementById("donate-input-one").value;
+    // const totalDonateOne = Number(document.getElementById("donate-one").innerText);
+    // const donateInputOne = Number(document.getElementById("donate-input-one").value);
+    // const balance = Number(document.getElementById("balance").innerText);
     const totalDonateOne = document.getElementById("donate-one").innerText;
+    const donateInputOne = document.getElementById("donate-input-one").value;
     const balance = document.getElementById("balance").innerText;
+// console.log(balance)
+// console.log(totalDonateOne)
+// console.log(donateInputOne)
 
-
-    if(Number(balance)<=5500){
+    if(Number(balance) < Number( donateInputOne)){
         alert("your account does not have sufficient balance");
+        document.getElementById("donate-input-one").value= "";
         return;
     }
 
@@ -49,21 +55,22 @@ document.getElementById("donate-two-btn").addEventListener("click",function(){
     const donateInputTwo = document.getElementById("donate-input-two").value;
     const totalDonateTwo = document.getElementById("donate-two").innerText;
     const balance = document.getElementById("balance").innerText;
-    console.log("test.....")
-    console.log(donateInputTwo)
-    console.log(totalDonateTwo)
-    console.log( balance)
+    // console.log("test.....")
+    // console.log(donateInputTwo)
+    // console.log(totalDonateTwo)
+    // console.log( balance)
 
 
-    if(Number(balance)<=5500){
+    if(Number(balance) < Number( donateInputTwo)){
         alert("your account does not have sufficient balance");
+        document.getElementById("donate-input-two").value= "";
         return;
     }
 
-    else if(donateInputTwo  < 1 ||isNaN(Number(donateInputTwo)) || Number(balance) < Number(donateInputTwo)) {
+    else if( donateInputTwo < 1 ||isNaN(Number(donateInputTwo)) || Number(balance) < Number(donateInputTwo)) {
         alert("invalid donation amount");
         
-        document.getElementById("donate-input-two").value= "";
+        document.getElementById("donate-input-one").value= "";
         return;
     }
 
@@ -100,12 +107,13 @@ document.getElementById("donate-three-btn").addEventListener("click",function(){
     // console.log( balance)
 
 
-    if(Number(balance)<=5500){
+    if(Number(balance) < Number( donateInputThree)){
         alert("your account does not have sufficient balance");
+        document.getElementById("donate-input-three").value= "";
         return;
     }
 
-   else if(donateInputThree  < 1 ||isNaN(Number(donateInputThree)) || Number(balance) < Number(donateInputThree)) {
+    else if( donateInputThree < 1 ||isNaN(Number(donateInputThree)) || Number(balance) < Number(donateInputThree)) {
         alert("invalid donation amount");
         
         document.getElementById("donate-input-three").value= "";
@@ -131,44 +139,7 @@ document.getElementById("donate-three-btn").addEventListener("click",function(){
 
 
 
+// ----------------->TODO: history section strat........<--------------->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById("donate-one-btn").addEventListener("click", function() {
-//     const donatInputOne = document.getElementById("donate-input-one");
-//     const totalDonateOne = document.getElementById("donate-one");
-//     const balance = document.getElementById("balance");
-//     const d = document.getElementById("donate-input-one");
-
-//     console.log('nahian');
-// });
