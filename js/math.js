@@ -181,32 +181,27 @@ document.getElementById("donate-three-btn").addEventListener("click",function(){
 
 // -------------------button section......-------------------------
 
-
-
-
+//TODO: history and donation button functionality Start
 const donationButton = document.getElementById("donation-button");
 const historyButton = document.getElementById("history-button");
 
-
 donationButton.addEventListener("click", function () {
-    document.getElementById("history-section").classList.add("hidden");
-    document.getElementById("donation-section").classList.remove("hidden");
-  
-    donationButton.classList.add("bg-green_primary");
-    historyButton.classList.remove("bg-green_primary");
-    historyButton.classList.add("bg-btn_secondary");
-  });
-  
+  document.getElementById("history-section").classList.add("hidden");
+  document.getElementById("donation-section").classList.remove("hidden");
 
-  historyButton.addEventListener("click", function () {
-    document.getElementById("history-section").classList.remove("hidden");
-    document.getElementById("donation-section").classList.add("hidden");
-  
-    historyButton.classList.add("bg-green_primary");
-    donationButton.classList.remove("bg-green_primary");
-    donationButton.classList.add("bg-btn_secondary");
-  });
+  donationButton.classList.add("bg-green_primary");
+  historyButton.classList.remove("bg-green_primary");
+  historyButton.classList.add("bg-btn_secondary");
+});
 
+historyButton.addEventListener("click", function () {
+  document.getElementById("history-section").classList.remove("hidden");
+  document.getElementById("donation-section").classList.add("hidden");
+
+  historyButton.classList.add("bg-green_primary");
+  donationButton.classList.remove("bg-green_primary");
+  donationButton.classList.add("bg-btn_secondary");
+});
 
 
 
