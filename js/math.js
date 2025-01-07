@@ -44,9 +44,23 @@ document.getElementById("donate-one-btn").addEventListener("click",function(){
     // console.log(typeof newBalance)
 
     document.getElementById("balance").innerText = newBalance;
+
+    my_modal_1.showModal()
+
+    document.getElementById("history-section").innerHTML += `
+    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
+    <p>${donateInputOne} </p>
+    <p>Donate for Flood at Noakhali, Bangladesh</p>
+    <p>${new Date().toLocaleDateString()}</p>
+    <p>${new Date().toLocaleTimeString()}</p>
+    <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
+
+    </div>
+    `;
+
 });
 
-// --------------------------->card 2<-------------------->
+// --------------------------->TODO: card 2<-------------------->
 
 
 document.getElementById("donate-two-btn").addEventListener("click",function(){
@@ -86,8 +100,22 @@ document.getElementById("donate-two-btn").addEventListener("click",function(){
 
     const newBalance = Number(balance) - donateInputTwo;
 
-
     document.getElementById("balance").innerText = newBalance;
+    my_modal_1.showModal()
+
+
+    document.getElementById("history-section").innerHTML += `
+    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
+    <p>${donateInputTwo} </p>
+    <p>Donate for Flood at Noakhali, Bangladesh</p>
+    <p>${new Date().toLocaleDateString()}</p>
+    <p>${new Date().toLocaleTimeString()}</p>
+    <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
+
+    </div>
+    `;
+
+
 });
 
 
@@ -135,11 +163,53 @@ document.getElementById("donate-three-btn").addEventListener("click",function(){
 
 
     document.getElementById("balance").innerText = newBalance;
+    my_modal_1.showModal()
+
+
+
+    document.getElementById("history-section").innerHTML += `
+    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
+    <p>${donateInputThree} </p>
+    <p>Donate for Flood at Noakhali, Bangladesh</p>
+    <p>${new Date().toLocaleDateString()}</p>
+    <p>${new Date().toLocaleTimeString()}</p>
+    <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
+
+    </div>
+    `;
 });
 
+// -------------------button section......-------------------------
 
 
-// ----------------->TODO: history section strat........<--------------->
+
+
+const donationButton = document.getElementById("donation-button");
+const historyButton = document.getElementById("history-button");
+
+
+donationButton.addEventListener("click", function () {
+    document.getElementById("history-section").classList.add("hidden");
+    document.getElementById("donation-section").classList.remove("hidden");
+  
+    donationButton.classList.add("bg-green_primary");
+    historyButton.classList.remove("bg-green_primary");
+    historyButton.classList.add("bg-btn_secondary");
+  });
+  
+
+  historyButton.addEventListener("click", function () {
+    document.getElementById("history-section").classList.remove("hidden");
+    document.getElementById("donation-section").classList.add("hidden");
+  
+    historyButton.classList.add("bg-green_primary");
+    donationButton.classList.remove("bg-green_primary");
+    donationButton.classList.add("bg-btn_secondary");
+  });
+
+
+
+
 
 
 

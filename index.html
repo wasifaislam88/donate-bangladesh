@@ -82,7 +82,7 @@
 
 <!-- -------- -->
 
-<main class="w-11/12 md:w-3/4 mx-auto pt-4 space-y-8">
+<main class="w-11/12 md:w-3/4 mx-auto pt-4 space-y-8 ">
 <!-- section 1 -->
  <section id="donation-section" class="space-y-8">
 
@@ -169,22 +169,30 @@
       </div>
    </section>
 
-   <section id="history-section" class="hidden">
+<!-- -----------  <!--TODO: -history section start............ -->
+
+   <!-- <section id="history-section" class="hidden">
     <div id="history-container"></div>
-  </section>
+  </section>  -->
+
+
+<section class="hidden" id="history-section">
+<div id="history-container">
+</div>
+</section>
 </main>
 <!-- FIXME: END -->
 
-<!-- -----------  <!--TODO: -history section start............ -->
 
+<!-- TODO:MODAL SECTION...... -->
 <!-- Open the modal using ID.showModal() method -->
 
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle flex justify-center items-center text-center">
+<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle flex justify-center items-center text-center">
   <div class="modal-box">
     <h3 class="text-3xl font-bold">Congrates!</h3>
     <div class="flex justify-center items-center mt-4 mb-4">
       <img src="./assets/coin.png" alt="" class="w-9"></div>
-      <p class="py-4 font-semibold">you have Donated for Humankind</p>
+      <p class="py-20 px-28 font-semibold">you have Donated for Humankind</p>
       <h4 class="font-bold text-xl"Successfully></h4>
       <form method="dialog" class="mt-5">
         <button class="btn font-bold">Close Confirmation</button>
@@ -192,9 +200,11 @@
   </div>
 </dialog>
 
+<!-- TODO:FOOTER SECTION-->
 
-
-
+<footer class="sticky top-[100vh] w-full bg-green-100 h-24 mt-16">
+  <span class="h-full flex justify-center items-center font-medium text-lg text-purple-600">All right reserved @Donate 2025</span>
+</footer>
 
 
 
