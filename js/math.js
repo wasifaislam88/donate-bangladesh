@@ -44,15 +44,11 @@ document.getElementById("donate-one-btn").addEventListener("click",function(){
     // console.log(typeof newBalance)
 
     document.getElementById("balance").innerText = newBalance;
-
     my_modal_1.showModal()
 
     document.getElementById("history-section").innerHTML += `
-    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
-    <p>${donateInputOne} </p>
-    <p>Donate for Flood at Noakhali, Bangladesh</p>
-    <p>${new Date().toLocaleDateString()}</p>
-    <p>${new Date().toLocaleTimeString()}</p>
+    <div class="border-2-gray-200 py-12 mt-6 rounded-xl bg-gray-100 font-bold text-center">
+    <p>${donateInputOne}Donate for Flood at Noakhali, Bangladesh</p>
     <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
 
     </div>
@@ -105,11 +101,8 @@ document.getElementById("donate-two-btn").addEventListener("click",function(){
 
 
     document.getElementById("history-section").innerHTML += `
-    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
-    <p>${donateInputTwo} </p>
-    <p>Donate for Flood at Noakhali, Bangladesh</p>
-    <p>${new Date().toLocaleDateString()}</p>
-    <p>${new Date().toLocaleTimeString()}</p>
+    <div class="border-2-gray-200 py-12 mt-5 rounded-xl bg-gray-100  font-bold text-center">
+    <p>${donateInputTwo} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
     <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
 
     </div>
@@ -168,13 +161,9 @@ document.getElementById("donate-three-btn").addEventListener("click",function(){
 
 
     document.getElementById("history-section").innerHTML += `
-    <div class="border-2 py-5 mt-5 rounded-xl bg-gray-100">
-    <p>${donateInputThree} </p>
-    <p>Donate for Flood at Noakhali, Bangladesh</p>
-    <p>${new Date().toLocaleDateString()}</p>
-    <p>${new Date().toLocaleTimeString()}</p>
+    <div class="border-2-gray-200 py-12 mt-5 rounded-xl bg-gray-100 font-bold text-center">
+    <p>${donateInputThree} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
     <p>${new Date().toLocaleTimeString()} ${new Date().toLocaleDateString()}</p>
-
     </div>
     `;
 });
