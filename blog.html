@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,8 +82,214 @@
 
 
 
-<!-- -------- -->
+
+<!-- main section..... -->
+
+<main class="w-11/12 md:w-3/4 mx-auto pt-4 space-y-4">
+  <div class="flex items-center">
+    <h2 class="font-semibold text-2xl md:text-4xl">Important FAQ</h2>
+    <img class="max-w-[60px]"src="./assets/faq.gif" alt=""/>
+  </div>
+<section class="space-y-4">
+  <!-- TODO: first question -->
+  <div
+    class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" checked="checked"/>
+    <div class="collapse-title text-xl font-medium">
+      What is the Document Object Model (DOM)?
+    </div>
+    <div class="collapse-content">
+    <p>
+  The Document Object Model (DOM) is a programming interface for web documents.
+  It represents the structure of an HTML or XML document as a tree of objects,
+  allowing developers to  interact with and manipulate the content, structure,
+   and styles of a webpage dynamically.
+      </p>
+    </div>
+  </div>
+  <!-- TODO:second question -->
+  <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2"/>
+    <div class="collapse-title text-xl font-medium">
+      How do you select an element from the DOM?
+    </div>
+    <div class="collapse-content">
+      <p>
+        To select an element from the DOM in JavaScript, several methods can be used based on the structure or attributes of the element. The getElementById method is used for selecting an element by its unique ID. For selecting elements by class, getElementsByClassName is used, which returns a live HTMLCollection. If you want to select by tag name, getElementsByTagName works similarly, providing a collection of elements. For more flexible and modern approaches, querySelector selects the first matching element based on a CSS selector, while querySelectorAll returns a NodeList of all matching elements. Additionally, you can traverse the DOM to find nested elements by selecting a parent and using methods like querySelector on it.
+      </p>
+    </div>
+  </div>
+
+  <!-- TODO:third question -->
+  <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">
+      What is event delegation in the context of the DOM, and why is it
+      useful?
+    </div>
+    <div class="collapse-content">
+      <p>
+      
+  Event delegation is a technique in the DOM (Document Object Model) where a
+  single event listener is attached to a parent element to handle events for 
+  its child elements. Instead of adding separate event listeners 
+  to each child element, you use the parent element to "delegate"
+  the handling of events for its children.
+      </p>
+    </div>
+  </div>
+
+  <!-- TODO: fourth question -->
+  <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">
+      How do you manipulate an element's attributes and styles using the
+      DOM?
+    </div>
+    <div class="collapse-content">
+      <p>
+        Manipulating an element's attributes and styles
+         using the DOM in JavaScript involves accessing and modifying properties of the element. Below is an explanation of how you can achieve this: <br />
+        Styles: Modify inline styles with element.style property, get
+        computed styles with getComputedStyle(), and manage CSS classes
+        using element.classList.
+      </p>
+    </div>
+  </div>
+
+
+    <!-- TODO: five question -->
+    <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">
+       Which DOM function can be used to modify an HTML element?
+    </div>
+    <div class="collapse-content">
+      <p>
+        Functions like document.getElementById(), 
+        document.querySelector(), and document.createElement()
+        are commonly used to select and modify HTML elements. 
+        For example, element.innerHTML can be used to change the content of an element.
+
+      </p>
+    </div>
+  </div>
 
 
 
+
+  
+    <!-- TODO: six question -->
+    <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">
+      How does the DOM model help in determining the structure and style of a webpage?
+    </div>
+    <div class="collapse-content">
+      <p>
+        The DOM represents the webpage structure as a tree, where each node is an element of the page. JavaScript can manipulate this structure, and CSS can apply styles to specific elements. The DOM allows developers to interact with the page content and layout in real time, making it possible to dynamically update and control the content and design.
+      </p>
+    </div>
+  </div>
+
+     <!-- TODO: seven question -->
+     <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+     <input type="radio" name="my-accordion-2" />
+     <div class="collapse-title text-xl font-medium">
+      How can events be handled using the DOM?
+     </div>
+     <div class="collapse-content">
+       <p>
+        Events in the DOM (like clicks, form submissions, or keyboard actions) can be handled using event listeners. Methods like addEventListener() allow developers to specify the type of event and associate it with a function (event handler) to execute when the event occurs.
+       </p>
+     </div>
+   </div>
+ 
+
+   <!-- TODO: eight question -->
+   <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">
+      What is the difference between the DOM view and model?
+    </div>
+    <div class="collapse-content">
+      <p>
+        The DOM view refers to the live representation of the document 
+        as it is rendered by the browser. It is constantly updated as 
+        the user interacts with the page. The DOM model refers to the 
+        underlying data structure (tree) that represents the page's 
+        content and elements, which can be manipulated via JavaScript.
+      </p>
+    </div>
+  </div>
+
+     <!-- TODO: nine question -->
+     <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        What is the difference between the DOM view and model?
+      </div>
+      <div class="collapse-content">
+        <p>
+          The DOM view refers to the live representation of the document 
+          as it is rendered by the browser. It is constantly updated as 
+          the user interacts with the page. The DOM model refers to the 
+          underlying data structure (tree) that represents the page's 
+          content and elements, which can be manipulated via JavaScript.
+        </p>
+      </div>
+    </div>
+
+      <!-- TODO: ten question -->
+      <div class="collapse collapse-arrow bg-base-200 bg-white border-2 border-gray-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is the relationship between DOM manipulation and web application performance?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Excessive or inefficient DOM manipulation can negatively impact 
+            performance, as each change to the DOM may trigger reflows and 
+            repaints of the page. Optimizing DOM access and limiting unnecessary
+             updates can improve the performance of web applications.
+
+          </p>
+        </div>
+      </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TODO:FOOTER SECTION-->
+
+<footer class="sticky top-[100vh] w-full bg-yellow-50 h-24 mt-16">
+  <span class="h-full flex justify-center items-center font-medium text-lg text-black">All right reserved @Donate 2025</span>
+</footer>
 
